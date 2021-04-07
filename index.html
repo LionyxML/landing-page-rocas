@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- BOXICONS (Ícone do Menu) -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>A landing page da Rosquinha!</title>
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <nav class="nav bd-grid">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="">
+        <a href="#">Rosquinharia</a>
+      </div>
+
+      <div class="menu-bot">
+        <i class='bx bx-menu'></i>
+      </div>
+
+      <div class="menu-conteudo">
+        <div class="nav-fechar">
+          <i class='bx bx-x'></i>
+        </div>
+        <div class="nav-lista">
+          <div class="nav-item"><a href="#" class="nav-link">Home</a></div>
+          <div class="nav-item"><a href="#produto" class="nav-link">Produto</a></div>
+          <div class="nav-item"><a href="#" class="nav-link">Blog</a></div>
+          <div class="nav-item"><a href="#" class="nav-link">Contato</a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PRINCIPAL -->
+  <main class="principal">
+    <!-- HOME -->
+    <section class="home">
+      <div class="home-container bd-grid">
+        <div class="home-img">
+          <img src="assets/img/rosca3.png" data-speed="3" alt="" class="move">
+          <img src="assets/img/rosca2.png" data-speed="-2" alt="" class="move">
+          <img src="assets/img/rosca1.png" data-speed="2" alt="" class="move">
+        </div>
+
+        <div class="home-conteudo">
+          <h1 class="home-titulo">Rosquinhas<br>Deliciosas!</h1>
+          <p class="home-descricao">O melhor da rosquinha americana<br> para você!</p>
+          <a href="#" class="home-botao">Peça já!</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Plugin GSAP de Animação -->
+  <script type="text/javascript" src="assets/js/gsap.min.js"></script>
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>

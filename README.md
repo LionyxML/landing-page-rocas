@@ -1,1 +1,3 @@
-# landing-page-rocas
+# landing-page-roscas
+
+Uma landing page para uma rosquinharia!
