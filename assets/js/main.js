@@ -32,16 +32,21 @@ function move(e) {
 
 // BOTAO PARA VOLTAR AO TOPO
 var topo = document.getElementsByClassName('seta-topo')[0];
+var cabecalho = document.getElementsByClassName('cabecalho')[0];
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     topo.classList.add('show');
+    cabecalho.classList.add('cor-escura');
+
   } else {
     topo.classList.remove('show');
+    cabecalho.classList.remove('cor-escura');
   }
 }
+
 
 
 
