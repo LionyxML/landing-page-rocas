@@ -33,9 +33,15 @@ function move(e) {
 // ANIMAÇÕES PELO PLUGIN gsap
 gsap.from('.logo img', { opacity: 0, duration: 10, delay: 0, y: 10, rotate: 720})
 gsap.from('.logo a, .menu-bot', { opacity: 0, duration: 1, delay: 2, y: 10})
-gsap.from('.seta', { opacity: 0, duration: 1, delay: 2.5, y: 10})
+gsap.from('.seta', { opacity: 0, duration: 1, delay: 2.5, y: 10, scale: 2})
 gsap.from('.nav-item',  { opacity: 0, duration: 1, delay: 2.1, y: 30, stagger: 0.2})
 gsap.from('.home-titulo',  { opacity: 0, duration: 1, delay: 1.8, y: 30})
 gsap.from('.home-descricao',  { opacity: 0, duration: 1, delay: 1.8, y: 30})
 gsap.from('.home-botao',  { opacity: 0, duration: 1, delay: 1.8, y: 30})
 gsap.from('.home-img',  { opacity: 0, duration: 1, delay: 1.3, y: 30})
+
+
+let seta = document.querySelector(".seta");
+let hover = gsap.to(seta, {scale: 1.2, color: "blue", duration: .5, paused: true, ease: "InOut"});
+seta.addEventListener("mouseenter", () => hover.play());
+seta.addEventListener("mouseleave", () => hover.reverse());
