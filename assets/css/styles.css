@@ -167,7 +167,7 @@ img {
 /* HOME - PRINCIPAL */
 .home {
   display: grid;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -224,6 +224,12 @@ img {
 }
 
 
+/* CONTEUDO FLEX */
+.conteudo-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 /* SABORES */
 
@@ -232,10 +238,9 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
-  background: linear-gradient(0deg, rgba(253,167,223,1) 14%, rgba(255,255,255,1) 50%, rgba(253,167,223,1) 92%);
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--cor-primaria);
 }
 
 .sabores-titulo {
@@ -245,11 +250,12 @@ img {
   color: var(--cor-branco);
   font-size: var(--fonte-grande);
   margin: 0;
+  margin-bottom: 2rem;
   padding: 0;
 }
 
 .sabores-container {
-  height: calc(70vh - var(--altura-h));
+  min-height: calc(70vh - var(--altura-h));
   width: 80%;
   display: flex;
   justify-content: space-around;
@@ -261,20 +267,21 @@ img {
   margin: 0.5rem;
   margin-bottom: 2rem;
   padding: 0;
-  height: calc(100vh - 50%);
+  height: 30rem;
   width: 15rem;
   background-color: white;
   transition: all 500ms;
   border-radius: 20px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .sabores-card:hover {
-  transform: scale(1.15) translateY(-10px);
+  transform: scale(1.05) translateY(-10px);
 }
 
 .card-img {
   height: 70%;
-  background-color: red;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -294,6 +301,112 @@ img {
 .card-descr {
   padding: 1rem;
 }
+
+
+/* DEPOIMENTOS */
+.depoimentos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--cor-primaria);
+}
+
+.depoimentos-titulo {
+  height: 10%;
+  width: 100vw;
+  text-align: center;
+  color: var(--cor-branco);
+  font-size: var(--fonte-grande);
+  margin: 0;
+  padding: 0;
+}
+
+.depoimentos-container {
+  height: calc(70vh - var(--altura-h));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.dep-card {
+  margin: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+  height: 20rem;
+  width: 15rem;
+  background-color: white;
+  transition: all 500ms;
+  border-radius: 20px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.dep-card:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.dep-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.66rem;
+  padding: 2rem;
+  height: 70%;
+  border-radius: 20px 20px 0 0 ;
+  position: relative;
+  color: #777;
+}
+
+.aspas {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.dep-foto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: solid white 0.4rem;
+  overflow: hidden;
+}
+
+.dep-foto img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.dep-nome {
+  height: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  background: #800080;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffc0cb, #800080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0 0 20px 20px;
+}
+
+.dep-nome-texto {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 55%;
+  font-size: 1.2rem;
+}
+
+
 
 
 /* MEDIA QUERYS */
