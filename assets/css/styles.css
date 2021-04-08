@@ -186,7 +186,6 @@ a.anchor {
   align-items: center;
   overflow: hidden;
   background-color: var(--cor-primaria);
-
 }
 
 
@@ -237,7 +236,7 @@ a.anchor {
   background-color: var(--cor-primaria-mais-escuro);
 }
 
-/* SETA */
+/* SETAS (para baixo e para o topo) */
 .seta {
   position: absolute;
   bottom: 2rem;
@@ -248,6 +247,30 @@ a.anchor {
 
 .seta a {
   color: var(--cor-branco);
+}
+
+.seta-topo {
+  display: inline-block;
+  font-size: 3rem;
+  text-align: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 0.8rem;
+  transition: color .5s, opacity .5s, visibility .5s, transform 1s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  color: var(--cor-branco);
+}
+
+.seta-topo:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.seta-topo.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* CONTEUDO FLEX */

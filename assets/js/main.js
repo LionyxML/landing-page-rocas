@@ -30,6 +30,29 @@ function move(e) {
 }
 
 
+// BOTAO PARA VOLTAR AO TOPO
+var topo = document.getElementsByClassName('seta-topo')[0];
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    topo.classList.add('show');
+  } else {
+    topo.classList.remove('show');
+  }
+}
+
+topo.addEventListener('click', voltaAoTopo);
+
+function voltaAoTopo() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
 // ANIMAÇÕES PELO PLUGIN gsap
 gsap.from('.logo img', { opacity: 0, duration: 10, delay: 0, y: 10, rotate: 720})
 gsap.from('.logo a, .menu-bot', { opacity: 0, duration: 1, delay: 2, y: 10})
