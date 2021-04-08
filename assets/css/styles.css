@@ -94,8 +94,7 @@ img {
   left: 0;
   z-index: var(--z-fixo);
   background-color: var(--cor-primaria);
-  transition: background-color .5s;
-
+  transition: box-shadow 0.5s;
 }
 
 .cor-escura {
@@ -124,7 +123,7 @@ img {
   }
 
   a.anchor {
-      top: calc(-1 * (var(--altura-h))) !important;
+      top: calc(-1 * (var(--altura-h) + 0.5rem )) !important;
   }
 
 }
@@ -151,7 +150,7 @@ img {
 a.anchor {
     display: block;
     position: relative;
-    top: calc(-1 * (var(--altura-h) + 2rem));
+    top: calc(-1 * (var(--altura-h) + 2.2rem));
     visibility: hidden;
 }
 
@@ -578,6 +577,10 @@ a.anchor {
     width: 350px;
   }
 
+  .anchor {
+        top: calc(-1 * (var(--altura-h) + 2rem)) !important;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -598,6 +601,10 @@ a.anchor {
 
   .home-img img {
     width: 600px;
+  }
+
+  .anchor {
+        top: calc(-1 * (var(--altura-h) + 1.5rem)) !important;
   }
 
 }
