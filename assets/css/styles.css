@@ -278,6 +278,10 @@ a.anchor {
   visibility: visible;
 }
 
+.seta-topo a {
+  color: var(--cor-branco);
+}
+
 /* CONTEUDO FLEX */
 .conteudo-flex {
   display: flex;

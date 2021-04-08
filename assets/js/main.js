@@ -43,14 +43,6 @@ function scrollFunction() {
   }
 }
 
-topo.addEventListener('click', voltaAoTopo);
-
-function voltaAoTopo() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
 
 
 // ANIMAÇÕES PELO PLUGIN gsap
