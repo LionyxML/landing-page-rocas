@@ -11,6 +11,7 @@
   --cor-primaria-escuro:#D980FA;
   --cor-primaria-mais-escuro: #B53471;
   --cor-branco: #FCF8F8;
+  --cor-cinza: #777;
 
   /* Fonte e tipografia */
   --fonte-corpo: 'Kumbh Sans', sans-serif;
@@ -45,6 +46,7 @@ body {
   font-family: var(--fonte-corpo);
   font-size: var(--fonte-normal);
   font-weight: 500;
+
   /* background: url("../img/2.jpg") no-repeat;
   background-repeat: repeat-x;
   background-attachment: fixed;
@@ -223,6 +225,23 @@ img {
   background-color: var(--cor-primaria-mais-escuro);
 }
 
+/* SETA */
+.seta {
+  position: absolute;
+  bottom: 2rem;
+  right: 50%;
+  font-size: 3rem;
+  color: white;
+  transition: all .5s;
+}
+
+.seta a {
+  color: var(--cor-branco);
+}
+
+.seta:hover {
+  transform: scale(1.15);
+}
 
 /* CONTEUDO FLEX */
 .conteudo-flex {
@@ -296,10 +315,12 @@ img {
   padding: 1rem;
   text-align: center;
   text-transform: uppercase;
+  color: var(--cor-cinza);
 }
 
 .card-descr {
   padding: 1rem;
+  color: var(--cor-cinza);
 }
 
 
@@ -359,7 +380,7 @@ img {
   height: 70%;
   border-radius: 20px 20px 0 0 ;
   position: relative;
-  color: #777;
+  color: var(--cor-cinza);
 }
 
 .aspas {
