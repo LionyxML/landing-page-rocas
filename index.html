@@ -20,12 +20,11 @@
     <nav class="nav bd-grid">
       <div class="logo">
         <img src="assets/img/logo.png" alt="">
-        <a href="#">Rosquinharia &#8482;
+        <a href="#">Rosquinharia &#8482; </a>
         <a href="#"><i class='bx bxl-facebook-circle'></i></a>
         <a href="#"><i class='bx bxl-instagram'></i></a>
         <a href="#"><i class='bx bxl-whatsapp' ></i></a>
         <a href="#"><i class='bx bxl-twitter' ></i></a>
-      </a>
       </div>
 
       <div class="menu-bot">
@@ -150,17 +149,17 @@
       <div class="contatos-titulo">Vamos conversar?</div>
       <div class="contatos-container">
         <div class="contatos-mapa">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7314.3865947186405!2d-46.6581737!3d-23.5615002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseum%20of%20Art%20of%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1sen!2sbr!4v1617907225806!5m2!1sen!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7314.3865947186405!2d-46.6581737!3d-23.5615002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseum%20of%20Art%20of%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1sen!2sbr!4v1617907225806!5m2!1sen!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="contatos-texto">
-          <p><i class='bx bx-location-plus' ></i>Rua das Rosquinhas, 42, Wonka-SP</p>
+          <p><i class='bx bx-location-plus' ></i>Rua 100, n.80, Wonka-SP</p>
           <p><i class='bx bx-phone'></i>(11) 99666-9999</p>
           <p><a href="#">
             <i class='bx bxl-whatsapp'></i>(11) 99966-9999</p>
             </a>
           <p>
             <a href="#">
-              <i class='bx bx-envelope'></i>contato@rosquinharia.com.br
+              <i class='bx bx-envelope'></i>contato@roscs.com.br
             </a>
           </p>
           <p class="social">
@@ -175,6 +174,53 @@
 
     </div>
   </main>
+
+
+  <!-- Modal do Pedido -->
+  <div class="modal-pedido">
+    <div class="modal-conteudo">
+          <div class="modal-fechar">&times</div>
+        <form action="#" method="post">
+      <div class="row">
+        <label class="modal-label" for="nome">Nome</label>
+        <input class="modal-nome" type="text" id="nome" name="nome" required value="">
+      </div>
+      <div class="row">
+        <label class="modal-label" for="tel">Telefone</label>
+        <input class="modal-nome" type="tel" id="tel" name="tel" required value="">
+      </div>
+      <hr>
+      <div class="row">
+        <label class="modal-label" for="prod1">Chuva de Cereja</label>
+        <input class="modal-qtd" type="number" id="prod1" name="qtd1" min="0" value="0">
+      </div>
+      <div class="row">
+        <label class="modal-label" for="prod2">Gotas de Chocolate</label>
+        <input class="modal-qtd" type="number" id="prod2" name="qtd2" min="0" value="0">
+      </div>
+      <div class="row">
+        <label class="modal-label" for="prod3">Flocos Divino</label>
+        <input class="modal-qtd" type="number" id="prod3" name="qtd3" min="0" value="0">
+      </div>
+      <div class="row">
+        <label class="modal-label" for="prod4">Ganache da Vovó</label>
+        <input class="modal-qtd" type="number" id="prod4" name="qtd4" min="0" value="0">
+      </div>
+      <div class="row">
+        <label class="modal-label" for="obs">Observações</label><br>
+        <textarea class="modal-qtd" id="obs" name="obs"></textarea>
+      </div>
+      <hr>
+
+      <div class="row">
+        <button type="submit">Enviar Pedido</button>
+      </div>
+    </form>
+    <div class="row">
+      <div class="flash"></div>
+    </div>
+    </div>
+  </div>
 
 
   <!-- Plugin GSAP de Animação -->
